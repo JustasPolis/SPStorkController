@@ -24,6 +24,8 @@ import UIKit
 @objc public protocol SPStorkControllerDelegate: class {
     
     @objc optional func didDismissStorkBySwipe()
+
+    @objc optional func didDismiss(_ presentationController: UIViewController)
     
     @objc optional func didDismissStorkByTap()
 }
